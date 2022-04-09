@@ -23,7 +23,7 @@
 
 ## 1. 简介
 
-Progressive Image Deraining Networks: A Better and Simpler Baseline一种提出多阶段渐进的残差网络，每一个阶段都是resnet，每一res块的输入为上一res块输出和原始雨图，，进一步提升了网络的性能，网络总体简洁高效，在各种数据集上表现良好,提供了一个很好的基准。
+Progressive Image Deraining Networks: A Better and Simpler Baseline提出一种多阶段渐进的残差网络，每一个阶段都是resnet，每一res块的输入为上一res块输出和原始雨图，，进一步提升了网络的性能，网络总体简洁高效，在各种数据集上表现良好,提供了一个很好的基准。
 
 
 <div align="center">
