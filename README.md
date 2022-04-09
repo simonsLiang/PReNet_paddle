@@ -100,7 +100,7 @@ unzip Rain100H.zip
 需保证save_path路径已存在
 ```bash
 export CUDA_VISIBLE_DEVICES=0
-python train_PReNet.py --data_path D:\BaiduNetdiskDownload\test --save_path ./log
+python train_PReNet.py --data_path ./RainTrainH --save_path ./log
 ```
 
 部分训练日志如下所示。
@@ -149,11 +149,11 @@ python predict.py --data_path data/rain-001.png --save_path ./results  --logdir 
 对于下面的图像进行预测
 
 <div align="center">
-    <img src="./images/demo.jpg" width=300">
+    <img src="./data/rain-001.png" width=300">
 </div>
 得到
 <div align="center">
-    <img src="./images/demo.jpg" width=300">
+    <img src="./data/derain-rain-001.png" width=300">
 </div>
 
 
