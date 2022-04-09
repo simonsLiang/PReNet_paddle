@@ -140,10 +140,10 @@ Avg. time: 0.017012195587158205
 
 ### 4.3 模型预测
 
-* 使用GPU预测
 
 ```
-python tools/predict.py --pretrained=./alexnet_pretrained.pdparams --model=alexnet --img-path=images/demo.jpg
+python predict.py --data_path data/rain-001.png --save_path ./results  --logdir ./logs/net_latest.pdparams
+
 ```
 
 对于下面的图像进行预测
@@ -151,14 +151,10 @@ python tools/predict.py --pretrained=./alexnet_pretrained.pdparams --model=alexn
 <div align="center">
     <img src="./images/demo.jpg" width=300">
 </div>
-
-最终输出结果为`class_id: 8, prob: 0.9990353584`，表示预测的类别ID是`8`，置信度为`0.999`。
-
-* 使用CPU预测
-
-```
-python tools/predict.py --pretrained=./alexnet_paddle.pdparams --model=alexnet --img-path=images/demo.jpg --device=cpu
-```
+得到
+<div align="center">
+    <img src="./images/demo.jpg" width=300">
+</div>
 
 
 ## 5. 模型推理部署
