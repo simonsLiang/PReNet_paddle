@@ -27,7 +27,7 @@
 
 
 <div align="center">
-    <img src="./images/alexnet_framework.png" width=800">
+    <img src="./data/net.jpg" width=800">
 </div>
 
 **论文:** [Progressive Image Deraining Networks: A Better and Simpler Baseline](https://arxiv.org/pdf/1901.09221v3.pdf)
