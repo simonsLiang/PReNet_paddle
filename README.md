@@ -194,7 +194,6 @@ Run successfully with command - python3.7 deploy/py_inference/infer.py --use-gpu
 ```
 
 
-* 更多详细内容，请参考：[AlexNet TIPC测试文档](./test_tipc/README.md)。
 * 如果运行失败，可以先根据报错的具体命令，自查下配置文件是否正确，如果无法解决，可以给Paddle提ISSUE：[https://github.com/PaddlePaddle/Paddle/issues/new/choose](https://github.com/PaddlePaddle/Paddle/issues/new/choose)；如果您在微信群里的话，也可以在群里及时提问。
 
 
