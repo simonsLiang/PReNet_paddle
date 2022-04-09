@@ -123,17 +123,19 @@ python Train_PReNet.py --data_path D:\BaiduNetdiskDownload\test --save_path ./lo
 该项目中，训练与评估脚本相同，指定`--test-only`参数即可完成预测过程。
 
 ```bash
-python test.p --data-path=/paddle/data/ILSVRC2012 --pretrained=./alexnet_pretrained.pdparams
+python test_PReNet.py --data_path ./Rain100H --logdir ./logs/net_latest.pdparams
 ```
 
 期望输出如下。
 
 ```
-Test:  [   0/1563]  eta: 1:14:20  loss: 1.0456 (1.0456)  acc1: 0.7812 (0.7812)  acc5: 0.9062 (0.9062)  time: 2.8539  data: 2.8262
-...
-Test:  [1500/1563]  eta: 0:00:05  loss: 1.2878 (1.9196)  acc1: 0.7344 (0.5639)  acc5: 0.8750 (0.7893)  time: 0.0623  data: 0.0534
-Test: Total time: 0:02:05
- * Acc@1 0.564 Acc@5 0.790
+rain-098.png :  0.016921281814575195
+rain-099.png :  0.016952991485595703
+rain-100.png :  0.01595759391784668
+Avg. time: 0.017012195587158205
+
+==> Valid. psnr: 29.4522, ssim: 0.8980
+
 ```
 
 ### 4.3 模型预测
