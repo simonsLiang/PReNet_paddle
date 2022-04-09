@@ -100,7 +100,7 @@ unzip Rain100H.zip
 需保证save_path路径已存在
 ```bash
 export CUDA_VISIBLE_DEVICES=0
-python Train_PReNet.py --data_path D:\BaiduNetdiskDownload\test --save_path ./log
+python train_PReNet.py --data_path D:\BaiduNetdiskDownload\test --save_path ./log
 ```
 
 部分训练日志如下所示。
