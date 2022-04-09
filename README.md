@@ -97,10 +97,10 @@ unzip Rain100H.zip
 ### 4.1 模型训练
 
 * 单机单卡训练
-
+需保证save_path路径已存在
 ```bash
 export CUDA_VISIBLE_DEVICES=0
-python train.py --data-path=./RainTrainH --lr=0.0001 --batch-size=18
+python Train_PReNet.py --data_path D:\BaiduNetdiskDownload\test --save_path ./log
 ```
 
 部分训练日志如下所示。
