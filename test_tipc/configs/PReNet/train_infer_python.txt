@@ -14,7 +14,7 @@ trainer:norm_train
 norm_train:train.py
 ##
 ===========================eval_params===========================
-eval:test_PReNet.py --data_path ./Rain100H --logdir ./logs/net_epoch100.pdparams
+eval:test.py --data_path ./Rain100H --logdir ./logs/net_epoch100.pdparams
 ##
 ===========================infer_params===========================
 --save-inference-dir:./output/PReNet/
