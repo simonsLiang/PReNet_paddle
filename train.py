@@ -118,5 +118,5 @@ def main():
             paddle.save(model.state_dict(), os.path.join(opt.save_path, 'net_epoch%d.pdparams' % (epoch+1)))
 
 if __name__ == "__main__":
-    #prepare_data_RainTrainH(data_path=opt.data_path, patch_size=100, stride=80)
+    prepare_data_RainTrainH(data_path=opt.data_path, patch_size=100, stride=80)
     main()
