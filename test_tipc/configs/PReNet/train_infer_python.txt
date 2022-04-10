@@ -1,0 +1,32 @@
+===========================train_params===========================
+model_name:PReNet
+python:python3.7
+gpu_list:0|0,1
+use-gpu:True|True
+--epochs:lite_train_lite_infer=1|whole_train_whole_infer=90
+--output-dir:./output/
+--batch-size:lite_train_lite_infer=32|whole_train_whole_infer=128
+--pretrained:null
+train_model_name:latest.pdparams
+--data-path:./lite_data
+##
+trainer:norm_train
+norm_train:train.py
+##
+===========================eval_params===========================
+eval:test_PReNet.py --data_path ./Rain100H --logdir ./logs/net_epoch100.pdparams
+##
+===========================infer_params===========================
+--save-inference-dir:./output/PReNet/
+--pretrained:
+norm_export:tools/export_model.py --pretrained logs/net_epoch100.pdparams
+##
+train_model:./logs/net_epoch100.pdparams
+infer_export:tools/export_model.py 
+##
+inference:tools/infer.py
+--use-gpu:True|False
+--batch-size:1
+--model-dir:./output/PReNet/
+--img-path:./Rain100H/rainy/rain-001.png
+--benchmark:True
