@@ -41,11 +41,11 @@ Progressive Image Deraining Networks: A Better and Simpler Baseline提出一种�
 
 数据集：RainTrainH,Rain100H,其中RainTrainH包含1254张雨图以及对应原图用于训练，Rain100H包含100张雨图和对应原图用于测试                                        
                                         
-原论文精度：Rain100H数据集,PReNet模型,psnr=29.46, ssim=0.899 (epoch=100,使用matlab计算)
+###原论文精度：Rain100H数据集,PReNet模型,psnr=29.46, ssim=0.899 (epoch=100,使用matlab计算)
 
 论文官方代码使用matlab计算psnr和ssim,使用python的scikit-image计算原论文提供的模型得到的结果为psnr=29.4522,ssim=0.8980                                        
                                         
-复现精度：Rain100H数据集,PReNet模型,psnr=29.4906, ssim=0.8978 (epoch=80,使用python的scikit-image计算)
+###复现精度：Rain100H数据集,PReNet模型,psnr=29.4906, ssim=0.8978 (epoch=80,使用python的scikit-image计算)
 
 PS：原论文batch_size为18,学习率为0.001，本项目将batch_size调整为24,学习率成比例调整为0.0013,其他超参数与原论文一致
                                         
