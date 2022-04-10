@@ -175,22 +175,22 @@ Serving部署教程可参考：[链接](deploy/serving_python/README.md)。
 * 准备数据
 
 ```bash
-# 解压数据，如果您已经解压过，则无需再次运行该步骤
-tar -xf test_images/lite_data.tar
+unzip RainTrainH.zip
+unzip Rain100H.zip                                                        
 ```
 
 * 运行测试命令
 
 ```bash
-bash test_tipc/test_train_inference_python.sh test_tipc/configs/AlexNet/train_infer_python.txt lite_train_lite_infer
+bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_infer_python.txt lite_train_lite_infer
 ```
 
-如果运行成功，在终端中会显示下面的内容，具体的日志也会输出到`test_tipc/output/`文件夹中的文件中。
+在终端中会显示下面的内容
 
 ```
-Run successfully with command - python3.7 -m paddle.distributed.launch --gpus=0,1 train.py --lr=0.001 --data-path=./lite_data --device=cpu --output-dir=./test_tipc/output/norm_train_gpus_0,1_autocast_null --epochs=1     --batch-size=1    !  
- ...
-Run successfully with command - python3.7 deploy/py_inference/infer.py --use-gpu=False --use-mkldnn=False --cpu-threads=6 --model-dir=./test_tipc/output/norm_train_gpus_0_autocast_null/ --batch-size=1     --benchmark=False     > ./test_tipc/output/python_infer_cpu_usemkldnn_False_threads_6_precision_null_batchsize_1.log 2>&1 !  
+ Run successfully with command - python3.7 train.py --output-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0 --epochs=1   --batch-size=32!  
+
+ Run successfully with command - python3.7 test_PReNet.py --data_path ./Rain100H --logdir ./logs/net_epoch100.pdparams --pretrained=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0/latest.pdparams!
 ```
 
 
