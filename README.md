@@ -58,6 +58,8 @@ PS：原论文batch_size为18,学习率为0.001，本项目将batch_size调整�
 | ssim  | 0.8918 | 0.8970 | 0.8978 | 0.8974 | 0.8976 | 
 
 
+可以从[BaiduYun](https://pan.baidu.com/s/1_vxCatOV3sOA6Vkx1l23eA?pwd=vitu)处下载训练日志(train.log)、模型对齐过程以及预训练参数
+                                        
 ## 3. 准备环境与数据
 
 ### 3.1 准备环境
