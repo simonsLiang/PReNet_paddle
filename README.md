@@ -210,7 +210,7 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_inf
 
 ## 7. LICENSE
 
-本项目的发布受[Apache 2.0 license](./LICENSE)许可认证。
+本项目的发布受[MIT license](./LICENSE)许可认证。
 
 
 ## 8. 参考链接与文献
