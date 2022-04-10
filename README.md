@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 ### 3.2 准备数据
 
-您可以从[BaiduYun](https://pan.baidu.com/s/1Oym9G-8Bq-0FU2BfbARf8g)申请下载RainTrainH.zip,Rain100H.zip
+您可以从[BaiduYun](https://pan.baidu.com/s/1Oym9G-8Bq-0FU2BfbARf8g)下载RainTrainH.zip,Rain100H.zip
 
 ```bash
 unzip RainTrainH.zip
