@@ -163,7 +163,7 @@ python predict.py --data_path data/rain-001.png --save_path ./results  --logdir 
 
 ### 5.1 基于Inference的推理
 
-Inference推理教程可参考：[链接](./deploy/inference_python/README.md)。
+Inference推理教程可参考：[链接](https://github.com/PaddlePaddle/models/blob/release/2.2/tutorials/tipc/train_infer_python/infer_python.md)。
 
 ### 5.2 基于Serving的服务化部署
 
