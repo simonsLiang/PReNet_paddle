@@ -109,7 +109,7 @@ unzip Rain100H.zip
 需保证save_path路径已存在
 ```bash
 export CUDA_VISIBLE_DEVICES=0
-python train_PReNet.py --data_path ./RainTrainH --save_path ./log
+python train.py --data_path ./RainTrainH --save_path ./log
 ```
 
 部分训练日志如下所示。
@@ -132,7 +132,7 @@ python train_PReNet.py --data_path ./RainTrainH --save_path ./log
 该项目中，训练与评估脚本相同，指定`--test-only`参数即可完成预测过程。
 
 ```bash
-python test_PReNet.py --data_path ./Rain100H --logdir ./logs/net_latest.pdparams
+python test.py --data_path ./Rain100H --logdir ./logs/net_latest.pdparams
 ```
 
 期望输出如下。
