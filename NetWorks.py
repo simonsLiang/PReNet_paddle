@@ -2,8 +2,18 @@ import paddle.nn.functional as F
 import paddle
 import paddle.nn as nn
 
-def convWithBias(in_channels,out_channels,kernel_size,stride,padding,bias_attr=True):
-    return nn.Conv2D(in_channels,out_channels,kernel_size,stride,padding,bias_attr=bias_attr)
+from init import kaiming
+import math
+def convWithBias(in_channels,out_channels,kernel_size,stride,padding):
+    if isinstance(kernel_size,int):
+        fan_in = kernel_size*kernel_size*in_channels
+    else:
+        fan_in = kernel_size[0]*kernel_size[1]*in_channels
+    bound = 1/math.sqrt(fan_in)
+    bias_attr = paddle.framework.ParamAttr(initializer=nn.initializer.Uniform(-bound, bound))
+    weight_attr = paddle.framework.ParamAttr(initializer=kaiming.KaimingUniform())
+    conv = nn.Conv2D(in_channels, out_channels, kernel_size, stride, padding, weight_attr=weight_attr,bias_attr=bias_attr)
+    return conv
 
 class PReNet(nn.Layer):
     def __init__(self, recurrent_iter=6, use_GPU=True):
@@ -69,11 +79,11 @@ class PReNet(nn.Layer):
         batch_size, row, col = input.shape[0], input.shape[2], input.shape[3]
 
         x = input
-        # h  = paddle.create_parameter(shape=(batch_size, 32, row, col),dtype='float32',is_bias=True)
-        # c  = paddle.create_parameter(shape=(batch_size, 32, row, col),dtype='float32',is_bias=True)
+        h  = paddle.create_parameter(shape=(batch_size, 32, row, col),dtype='float32',is_bias=True)
+        c  = paddle.create_parameter(shape=(batch_size, 32, row, col),dtype='float32',is_bias=True)
 
-        h = paddle.zeros(shape=(batch_size, 32, row, col),dtype='float32')
-        c = paddle.zeros(shape=(batch_size, 32, row, col),dtype='float32')
+        # h = paddle.zeros(shape=(batch_size, 32, row, col),dtype='float32')
+        # c = paddle.zeros(shape=(batch_size, 32, row, col),dtype='float32')
 
         x_list = []
         for i in range(self.iteration):
