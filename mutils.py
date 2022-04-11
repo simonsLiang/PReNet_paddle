@@ -2,7 +2,6 @@ from skimage.measure import compare_psnr as psnr
 from skimage.measure import compare_ssim as ssim
 import numpy as np
 import os
-import torch
 from collections import OrderedDict
 
 def compute_psnr(im1, im2):
@@ -65,14 +64,3 @@ def adjust_learning_rate(optimizer, epoch, step_size, lr_init, gamma):
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
 
-def load_state_dict(path):
-
-    state_dict = torch.load(path)
-    new_state_dcit = OrderedDict()
-    for k, v in state_dict.items():
-        if 'module' in k:
-            name = k[7:]
-        else:
-            name = k
-        new_state_dcit[name] = v
-    return new_state_dcit
