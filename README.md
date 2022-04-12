@@ -111,7 +111,7 @@ unzip Rain100H.zip
 需保证save_path路径已存在
 ```bash
 export CUDA_VISIBLE_DEVICES=0
-python train.py --data_path ./RainTrainH --save_path ./log
+python train.py --data_path ./RainTrainH --save_path ./logs
 ```
 
 部分训练日志如下所示。
