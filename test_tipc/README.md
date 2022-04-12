@@ -1,7 +1,7 @@
 # PReNet_paddle 飞桨训推一体认证（TIPC）
 
 ## 1. 简介
-飞桨除了基本的模型训练和预测，还提供了支持多端多平台的高性能推理部署工具。飞桨训推一体全流程（Training and Inference Pipeline Criterion(TIPC)）旨在建立模型从学术研究到产业落地的桥梁，方便模型更广泛的使用。您可以从[飞桨训推一体全流程（TIPC）开发文档](https://github.com/PaddlePaddle/models/blob/release%2F2.2/tutorials/tipc/README.mdd)了解更多关于飞桨训推一体认证（TIPC）
+飞桨除了基本的模型训练和预测，还提供了支持多端多平台的高性能推理部署工具。飞桨训推一体全流程（Training and Inference Pipeline Criterion(TIPC)）旨在建立模型从学术研究到产业落地的桥梁，方便模型更广泛的使用。您可以从[飞桨训推一体全流程（TIPC）开发文档](https://github.com/PaddlePaddle/models/blob/release%2F2.2/tutorials/tipc/README.md)了解更多关于飞桨训推一体认证（TIPC）
 
 ## 2.本项目TIPC介绍
 
