@@ -43,7 +43,7 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_inf
 ```
 参考PReNet_paddle目录文件结构如下：
 <div align="center">
-    <img src="../data/acpath.png" width="500">
+    <img src="../data/acp.png" width="500">
 </div>
 
 
