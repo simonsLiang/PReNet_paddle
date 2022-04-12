@@ -1,0 +1,156 @@
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+Traceback (most recent call last):
+  File "train.py", line 9, in <module>
+    from SSIM import SSIM
+  File "/content/PReNet_paddle/SSIM.py", line 12, in <module>
+    f = paddle.create_parameter(shape=(5, 2, 3, 1),dtype='float32',is_bias=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layers/tensor.py", line 153, in create_parameter
+    default_initializer)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layer_helper_base.py", line 378, in create_parameter
+    **attr._to_kwargs(with_initializer=True))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3137, in create_parameter
+    initializer(param, self)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/initializer.py", line 162, in __call__
+    stop_gradient=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3167, in append_op
+    kwargs.get("stop_gradient", False))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/dygraph/tracer.py", line 45, in trace_op
+    not stop_gradient)
+NotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:101)
+  [operator < fill_constant > error]
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+Traceback (most recent call last):
+  File "train.py", line 9, in <module>
+    from SSIM import SSIM
+  File "/content/PReNet_paddle/SSIM.py", line 12, in <module>
+    f = paddle.create_parameter(shape=(5, 2, 3, 1),dtype='float32',is_bias=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layers/tensor.py", line 153, in create_parameter
+    default_initializer)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layer_helper_base.py", line 378, in create_parameter
+    **attr._to_kwargs(with_initializer=True))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3137, in create_parameter
+    initializer(param, self)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/initializer.py", line 162, in __call__
+    stop_gradient=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3167, in append_op
+    kwargs.get("stop_gradient", False))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/dygraph/tracer.py", line 45, in trace_op
+    not stop_gradient)
+NotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:101)
+  [operator < fill_constant > error]
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+Traceback (most recent call last):
+  File "train.py", line 9, in <module>
+    from SSIM import SSIM
+  File "/content/PReNet_paddle/SSIM.py", line 12, in <module>
+    f = paddle.create_parameter(shape=(5, 2, 3, 1),dtype='float32',is_bias=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layers/tensor.py", line 153, in create_parameter
+    default_initializer)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layer_helper_base.py", line 378, in create_parameter
+    **attr._to_kwargs(with_initializer=True))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3137, in create_parameter
+    initializer(param, self)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/initializer.py", line 162, in __call__
+    stop_gradient=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3167, in append_op
+    kwargs.get("stop_gradient", False))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/dygraph/tracer.py", line 45, in trace_op
+    not stop_gradient)
+NotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:101)
+  [operator < fill_constant > error]
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+Traceback (most recent call last):
+  File "train.py", line 9, in <module>
+    from SSIM import SSIM
+  File "/content/PReNet_paddle/SSIM.py", line 12, in <module>
+    f = paddle.create_parameter(shape=(5, 2, 3, 1),dtype='float32',is_bias=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layers/tensor.py", line 153, in create_parameter
+    default_initializer)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layer_helper_base.py", line 378, in create_parameter
+    **attr._to_kwargs(with_initializer=True))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3137, in create_parameter
+    initializer(param, self)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/initializer.py", line 162, in __call__
+    stop_gradient=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3167, in append_op
+    kwargs.get("stop_gradient", False))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/dygraph/tracer.py", line 45, in trace_op
+    not stop_gradient)
+NotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:101)
+  [operator < fill_constant > error]
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+Traceback (most recent call last):
+  File "train.py", line 9, in <module>
+    from SSIM import SSIM
+  File "/content/PReNet_paddle/SSIM.py", line 12, in <module>
+    f = paddle.create_parameter(shape=(5, 2, 3, 1),dtype='float32',is_bias=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layers/tensor.py", line 153, in create_parameter
+    default_initializer)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layer_helper_base.py", line 378, in create_parameter
+    **attr._to_kwargs(with_initializer=True))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3137, in create_parameter
+    initializer(param, self)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/initializer.py", line 162, in __call__
+    stop_gradient=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3167, in append_op
+    kwargs.get("stop_gradient", False))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/dygraph/tracer.py", line 45, in trace_op
+    not stop_gradient)
+NotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:101)
+  [operator < fill_constant > error]
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+Traceback (most recent call last):
+  File "train.py", line 9, in <module>
+    from SSIM import SSIM
+  File "/content/PReNet_paddle/SSIM.py", line 12, in <module>
+    f = paddle.create_parameter(shape=(5, 2, 3, 1),dtype='float32',is_bias=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layers/tensor.py", line 153, in create_parameter
+    default_initializer)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/layer_helper_base.py", line 378, in create_parameter
+    **attr._to_kwargs(with_initializer=True))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3137, in create_parameter
+    initializer(param, self)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/initializer.py", line 162, in __call__
+    stop_gradient=True)
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/framework.py", line 3167, in append_op
+    kwargs.get("stop_gradient", False))
+  File "/usr/local/lib/python3.7/dist-packages/paddle/fluid/dygraph/tracer.py", line 45, in trace_op
+    not stop_gradient)
+NotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:101)
+  [operator < fill_constant > error]
