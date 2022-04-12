@@ -19,7 +19,7 @@ parser.add_argument("--milestone", type=int, default=[30,50,80], help="When to d
 parser.add_argument("--lr", type=float, default=1.3e-3, help="initial learning rate")
 parser.add_argument("--save_path", type=str, default="./", help='path to save models and logfiles')
 parser.add_argument("--save_freq",type=int,default=1,help='save intermediate model')
-parser.add_argument("--data_path",type=str, default=r'./RainTrainH',help='path to training data')
+parser.add_argument("--data_path",type=str, default=r'./RainTrainH_min',help='path to training data')
 parser.add_argument("--use_gpu", type=bool, default=True, help='use GPU or not')
 parser.add_argument("--gpu_id", type=str, default="0", help='GPU id')
 parser.add_argument("--recurrent_iter", type=int, default=6, help='number of recursive stages')
