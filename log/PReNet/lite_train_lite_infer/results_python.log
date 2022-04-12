@@ -1,0 +1,4 @@
+[33m Run successfully with command - python3.7 train.py --output-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0 --epochs=1   --batch-size=32!  [0m
+[33m Run successfully with command - python3.7 test.py --data_path ./Rain100H  --pretrained=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0/net_latest.pdparams!  [0m
+[33m Run successfully with command - python3.7 tools/export_model.py  --pretrained=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0/net_latest.pdparams --save-inference-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0!  [0m
+[33m Run successfully with command - python3.7 tools/infer.py --use-gpu=True --model-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0 --batch-size=1   --benchmark=False > ./log/PReNet/lite_train_lite_infer/python_infer_gpu_batchsize_1.log 2>&1 !  [0m
