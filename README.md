@@ -131,7 +131,6 @@ python train.py --data_path ./RainTrainH --save_path ./logs
 
 ### 4.2 模型评估
 
-该项目中，训练与评估脚本相同，指定`--test-only`参数即可完成预测过程。
 
 ```bash
 python test.py --data_path ./Rain100H --logdir ./logs/net_latest.pdparams
