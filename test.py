@@ -29,7 +29,7 @@ def main():
     model_paddle = PReNet(opt.recurrent_iter, opt.use_GPU)
     print_network(model_paddle)
 
-    model_paddle.load_dict(paddle.load(opt.logdir))
+    model_paddle.load_dict(paddle.load(opt.pretrained))
     model_paddle.eval()
 
     time_test = 0
