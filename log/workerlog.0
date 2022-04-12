@@ -1,0 +1,384 @@
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 03:46:28.648007   732 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 03:46:28.652002   732 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649735189 (unix time) try "date -d @1649735189" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x2ca) received by PID 732 (TID 0x7fd2feff4780) from PID 714 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 03:48:04.249647  1080 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 03:48:04.254853  1080 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649735285 (unix time) try "date -d @1649735285" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x424) received by PID 1080 (TID 0x7f4a9423e780) from PID 1060 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 03:52:05.173521  1377 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 03:52:05.178516  1377 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649735526 (unix time) try "date -d @1649735526" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x54d) received by PID 1377 (TID 0x7fe3de15d780) from PID 1357 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:11:53.178503  2258 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:11:53.183300  2258 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649736714 (unix time) try "date -d @1649736714" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x8be) received by PID 2258 (TID 0x7f34eebf5780) from PID 2238 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:13:52.109272  2582 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:13:52.114040  2582 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649736833 (unix time) try "date -d @1649736833" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0xa02) received by PID 2582 (TID 0x7f7376f05780) from PID 2562 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:20:57.773728  3006 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:20:57.778800  3006 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649737258 (unix time) try "date -d @1649737258" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0xbaa) received by PID 3006 (TID 0x7ff7f4067780) from PID 2986 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:31:04.030586  3433 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:31:04.038161  3433 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649737864 (unix time) try "date -d @1649737864" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0xd55) received by PID 3433 (TID 0x7f5e5714c780) from PID 3413 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:37:42.338243  3825 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:37:42.346767  3825 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649738263 (unix time) try "date -d @1649738263" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0xedd) received by PID 3825 (TID 0x7ff9462c4780) from PID 3805 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:43:40.426317  4211 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:43:40.431284  4211 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649738621 (unix time) try "date -d @1649738621" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x105f) received by PID 4211 (TID 0x7fcd9d855780) from PID 4191 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:46:11.275492  4571 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:46:11.280925  4571 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649738772 (unix time) try "date -d @1649738772" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x11c7) received by PID 4571 (TID 0x7f9d01bed780) from PID 4551 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:49:39.344871  4947 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:49:39.350152  4947 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649738980 (unix time) try "date -d @1649738980" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x133f) received by PID 4947 (TID 0x7fd695ed7780) from PID 4927 ***]
+
+/usr/local/lib/python3.7/dist-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+/usr/local/lib/python3.7/dist-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+/usr/local/lib/python3.7/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+W0412 04:57:40.676834  5379 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 11.2
+W0412 04:57:40.681890  5379 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::PreparedOp::Prepare(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+2   paddle::imperative::PreparedOp paddle::imperative::PrepareImpl<paddle::imperative::VarBase>(paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::OperatorWithKernel const&, paddle::platform::Place const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   paddle::platform::DeviceContextPool::Get(paddle::platform::Place const&)
+4   std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >::_M_complete_async()
+5   std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*)
+6   std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<paddle::platform::EmplaceDeviceContext<paddle::platform::CUDADeviceContext, paddle::platform::CUDAPlace>(std::map<paddle::platform::Place, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > >, std::less<paddle::platform::Place>, std::allocator<std::pair<paddle::platform::Place const, std::shared_future<std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > > > >*, paddle::platform::Place)::{lambda()#1}> >, std::unique_ptr<paddle::platform::DeviceContext, std::default_delete<paddle::platform::DeviceContext> > > >::_M_invoke(std::_Any_data const&)
+7   paddle::platform::CUDADeviceContext::CUDADeviceContext(paddle::platform::CUDAPlace)
+8   paddle::platform::CUDAContext::CUDAContext(paddle::platform::CUDAPlace const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+9   paddle::platform::stream::CUDAStream::Init(paddle::platform::Place const&, paddle::platform::stream::Priority const&, paddle::platform::stream::StreamFlag const&)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1649739461 (unix time) try "date -d @1649739461" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x14ef) received by PID 5379 (TID 0x7f82011f5780) from PID 5359 ***]
+
