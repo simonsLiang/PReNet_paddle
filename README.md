@@ -133,7 +133,7 @@ python train.py --data_path ./RainTrainH --save_path ./logs
 
 
 ```bash
-python test.py --data_path ./Rain100H --logdir ./logs/net_latest.pdparams
+python test.py --data_path ./Rain100H --pretrained ./logs/net_latest.pdparams
 ```
 
 期望输出如下。
