@@ -116,6 +116,7 @@ def main():
         train_one_epoch_paddle(model,loader_train,criterion,optimizer,scheduler,epoch,print_freq=100)
         if epoch % opt.save_freq == 0 and paddle.distributed.get_rank() <= 0:
             paddle.save(model.state_dict(), os.path.join(opt.save_path, 'net_epoch%d.pdparams' % (epoch+1)))
+            paddle.save(model.state_dict(), os.path.join(opt.output_dir, 'net_latest.pdparams'))
 
 if __name__ == "__main__":
     prepare_data_RainTrainH(data_path=opt.data_path, patch_size=100, stride=80)
