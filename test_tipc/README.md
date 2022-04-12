@@ -43,8 +43,10 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_inf
 ```
 参考目录文件结构：
 <div align="center">
-    <img src="../data/acpath.png" width="1000">
+    <img src="../data/acpath.png" width="300">
 </div>
+
+
 ## 4.运行结果
 ```
  Run successfully with command - python3.7 train.py --output-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0 --epochs=1   --batch-size=32! 
