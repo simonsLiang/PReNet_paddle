@@ -41,9 +41,9 @@ test_tipc
  ```bash
 bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_infer_python.txt lite_train_lite_infer
 ```
-参考目录文件结构：
+参考PReNet_paddle目录文件结构如下：
 <div align="center">
-    <img src="../data/acpath.png" width="300">
+    <img src="../data/acpath.png" width="500">
 </div>
 
 
