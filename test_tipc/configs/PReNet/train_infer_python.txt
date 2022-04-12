@@ -1,7 +1,7 @@
 ===========================train_params===========================
 model_name:PReNet
 python:python3.7
-gpu_list:0|0,1
+gpu_list:0|0
 use-gpu:True|True
 --epochs:lite_train_lite_infer=1|whole_train_whole_infer=90
 --output-dir:./output/
