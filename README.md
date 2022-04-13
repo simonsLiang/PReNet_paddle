@@ -185,7 +185,7 @@ Serving部署教程可参考：[链接](deploy/serving_python/README.md)。
 以Linux基础训练推理测试为例，测试流程如下。
 
 
-* 运行测试命令
+* 再PReNet_paddle目录下 运行测试命令
 
 ```bash
 bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_infer_python.txt lite_train_lite_infer
