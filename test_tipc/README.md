@@ -41,11 +41,6 @@ test_tipc
  ```bash
 bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_infer_python.txt lite_train_lite_infer
 ```
-参考PReNet_paddle目录文件结构如下(results为自动生成）：
-<div align="center">
-    <img src="../data/acp.png" width="500">
-</div>
-
 
 ## 4.运行结果
 ```
