@@ -11,12 +11,12 @@
 
 ### 2.2 准备推理模型
 
-模型动转静方法可以将训练得到的动态图模型转化为用于推理的静态图模型，本小节代码位于tools/export_model.py
+模型动转静方法可以将训练得到的动态图模型转化为用于推理的静态图模型，代码位于tools/export_model.py
 
 
 ### 2.3 准备推理所需代码
 
-基于预测引擎的推理过程包含4个步骤：初始化预测引擎、预处理、推理、后处理,本小节代码位于tools/infer.py
+基于预测引擎的推理过程包含4个步骤：初始化预测引擎、预处理、推理、后处理,代码位于tools/infer.py
 
 ### 2.4 配置文件和测试文档
 
@@ -25,11 +25,11 @@
 ```
 test_tipc
     |--configs                              # 配置目录
-    |    |--PReNet                      # 您的模型名称
+    |    |--PReNet                         # 模型名称
     |           |--train_infer_python.txt   # 基础训练推理测试配置文件
     |----README.md                          # TIPC说明文档
-    |----test_train_inference_python.sh     # TIPC基础训练推理测试解析脚本，无需改动
-    |----common_func.sh                     # TIPC基础训练推理测试常用函数，无需改动
+    |----test_train_inference_python.sh     # TIPC基础训练推理测试解析脚本
+    |----common_func.sh                     # TIPC基础训练推理测试常用函数
  ```
  
  修改train_infer_python.txt里面的参数完成所有配置
