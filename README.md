@@ -184,12 +184,6 @@ Serving部署教程可参考：[链接](deploy/serving_python/README.md)。
 
 以Linux基础训练推理测试为例，测试流程如下。
 
-* 准备数据
-
-```bash
-unzip RainTrainH.zip
-unzip Rain100H.zip                                                        
-```
 
 * 运行测试命令
 
@@ -200,10 +194,13 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/PReNet/train_inf
 在终端中会显示下面的内容
 
 ```
- Run successfully with command - python3.7 train.py --output-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0 --epochs=1   --batch-size=32!  
-
- Run successfully with command - python3.7 test_PReNet.py --data_path ./Rain100H --logdir ./logs/net_epoch100.pdparams --pretrained=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0/latest.pdparams!
-```
+ Run successfully with command - python3.7 train.py --output-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0 --epochs=1   --batch-size=32! 
+ Run successfully with command - python3.7 test.py --data_path ./Rain10H  --pretrained=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0/net_latest.pdparams! 
+ Run successfully with command - python3.7 tools/export_model.py  --pretrained=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0/net_latest.pdparams --save-inference-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0!  
+(1, 3, 224, 224)
+image_name: ./data/rain-001.png,, prob_shape: (3, 224, 224)
+ Run successfully with command - python3.7 tools/infer.py --use-gpu=True --model-dir=./log/PReNet/lite_train_lite_infer/norm_train_gpus_0 --batch-size=1   --benchmark=False > ./log/PReNet/lite_train_lite_infer/python_infer_gpu_batchsize_1.log 2>&1 !
+ ```
 
 
 * 如果运行失败，可以先根据报错的具体命令，自查下配置文件是否正确，如果无法解决，可以给Paddle提ISSUE：[https://github.com/PaddlePaddle/Paddle/issues/new/choose](https://github.com/PaddlePaddle/Paddle/issues/new/choose)；如果您在微信群里的话，也可以在群里及时提问。
