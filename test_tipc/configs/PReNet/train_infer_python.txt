@@ -5,10 +5,10 @@ gpu_list:0
 use-gpu:True
 --epochs:lite_train_lite_infer=1|whole_train_whole_infer=90
 --output-dir:./output/
---batch-size:lite_train_lite_infer=16|whole_train_whole_infer=128
+--batch-size:lite_train_lite_infer=1|whole_train_whole_infer=128
 --pretrained:null
 train_model_name:net_latest.pdparams
---data-path:./lite_data
+--data-path:./RainTrainH_min
 ##
 trainer:norm_train
 norm_train:train.py
