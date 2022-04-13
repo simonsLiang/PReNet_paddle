@@ -37,7 +37,7 @@ Progressive Image Deraining Networks: A Better and Simpler Baseline提出一种�
 
 在此感谢[MSSIM](https://github.com/AgentMaker/Paddle-MSSSIM)，提高了论文复现的效率。
                                         
-快速使用可参考[AIStudio](https://aistudio.baidu.com/studio/project/partial/verify/3795200/53134803dcaa4b78888223a9a8f6e182)                                     
+快速使用可参考[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/3795200?contributionType=1&shared=1)                                     
 
 ## 2. 数据集和复现精度
 
